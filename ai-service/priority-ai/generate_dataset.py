@@ -197,7 +197,7 @@ def make_row(label: str, noise_prob: float = 0.08) -> dict:
 
 # ─── Main generation ─────────────────────────────────────────────────────────
 
-def generate_dataset(n: int = 2400, output_path: str = "dataset.csv") -> pd.DataFrame:
+def generate_dataset(n: int = 2400, output_path: str = "data\\dataset.csv") -> pd.DataFrame:
     rows = []
 
     # Slightly imbalanced distribution reflecting real-world NGO tasks

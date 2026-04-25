@@ -20,9 +20,9 @@ warnings.filterwarnings("ignore")
 
 # ─── Paths ───────────────────────────────────────────────────────────────────
 BASE_DIR   = Path(__file__).parent
-DATA_PATH  = BASE_DIR / "dataset.csv"
-MODEL_PATH = BASE_DIR / "model.pkl"
-ENC_PATH   = BASE_DIR / "encoder.pkl"
+DATA_PATH  = BASE_DIR / "data" / "dataset.csv"
+MODEL_PATH = BASE_DIR / "models" / "model.pkl"
+ENC_PATH   = BASE_DIR / "models" / "encoder.pkl"
 
 # ─── Config ──────────────────────────────────────────────────────────────────
 EMBED_MODEL   = "all-MiniLM-L6-v2"   # 80 MB, fast, great quality

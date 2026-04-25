@@ -10,7 +10,7 @@ from functools import lru_cache
 from sentence_transformers import SentenceTransformer
 
 BASE_DIR   = Path(__file__).parent
-MODEL_PATH = BASE_DIR / "model.pkl"
+MODEL_PATH = BASE_DIR / "models" / "model.pkl"
 
 # ─── Label → numeric priority score mapping ──────────────────────────────────
 LABEL_SCORE_MAP = {
