@@ -1,0 +1,538 @@
+[
+  {
+    "task_id": "T0001",
+    "task_title": "Education Support Task 1",
+    "task_description": "Volunteer needed for education support in Bangalore.",
+    "task_category": "education_support",
+    "location_city": "Bangalore",
+    "area": "Dadar",
+    "latitude": 13.04295,
+    "longitude": 77.62985,
+    "disaster_type": "none",
+    "required_skills": [
+      "teaching"
+    ],
+    "required_volunteers_count": 3,
+    "currently_assigned_count": 1,
+    "task_priority_score": 95,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 4,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [],
+    "ngo_name": "SevaSetu Initiative",
+    "created_time": "2026-04-23T23:19:02.206190"
+  },
+  {
+    "task_id": "T0002",
+    "task_title": "Medical Aid Task 2",
+    "task_description": "Volunteer needed for medical aid in Mumbai.",
+    "task_category": "medical_aid",
+    "location_city": "Mumbai",
+    "area": "Kurla",
+    "latitude": 19.05488,
+    "longitude": 72.84755,
+    "disaster_type": "none",
+    "required_skills": [
+      "counseling",
+      "logistics"
+    ],
+    "required_volunteers_count": 8,
+    "currently_assigned_count": 2,
+    "task_priority_score": 80,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 1,
+    "physical_effort_level": "high",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Bengali"
+    ],
+    "ngo_name": "NayaSaathi Org",
+    "created_time": "2026-04-24T01:19:02.206313"
+  },
+  {
+    "task_id": "T0003",
+    "task_title": "Awareness Campaign Task 3",
+    "task_description": "Volunteer needed for awareness campaign in Chennai.",
+    "task_category": "awareness_campaign",
+    "location_city": "Chennai",
+    "area": "Andheri",
+    "latitude": 13.01122,
+    "longitude": 80.19375,
+    "disaster_type": "none",
+    "required_skills": [
+      "counseling",
+      "teaching"
+    ],
+    "required_volunteers_count": 8,
+    "currently_assigned_count": 0,
+    "task_priority_score": 40,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 2,
+    "physical_effort_level": "high",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Kannada"
+    ],
+    "ngo_name": "NayaSaathi Org",
+    "created_time": "2026-04-24T08:19:02.206494"
+  },
+  {
+    "task_id": "T0004",
+    "task_title": "Food Distribution Task 4",
+    "task_description": "Volunteer needed for food distribution in Pune.",
+    "task_category": "food_distribution",
+    "location_city": "Pune",
+    "area": "Bandra",
+    "latitude": 18.50309,
+    "longitude": 73.89774,
+    "disaster_type": "none",
+    "required_skills": [
+      "food_distribution",
+      "packaging"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 4,
+    "task_priority_score": 88,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 8,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Kannada"
+    ],
+    "ngo_name": "RapidRelief NGO",
+    "created_time": "2026-04-24T12:19:02.206604"
+  },
+  {
+    "task_id": "T0005",
+    "task_title": "Cleanup Drive Task 5",
+    "task_description": "Volunteer needed for cleanup drive in Jaipur.",
+    "task_category": "cleanup_drive",
+    "location_city": "Jaipur",
+    "area": "Dadar",
+    "latitude": 26.97607,
+    "longitude": 75.75848,
+    "disaster_type": "none",
+    "required_skills": [
+      "logistics",
+      "cleanup",
+      "medical"
+    ],
+    "required_volunteers_count": 8,
+    "currently_assigned_count": 4,
+    "task_priority_score": 98,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 6,
+    "physical_effort_level": "high",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Gujarati"
+    ],
+    "ngo_name": "NayaSaathi Org",
+    "created_time": "2026-04-24T00:19:02.206714"
+  },
+  {
+    "task_id": "T0006",
+    "task_title": "Awareness Campaign Task 6",
+    "task_description": "Volunteer needed for awareness campaign in Kolkata.",
+    "task_category": "awareness_campaign",
+    "location_city": "Kolkata",
+    "area": "Bandra",
+    "latitude": 22.50772,
+    "longitude": 88.3086,
+    "disaster_type": "none",
+    "required_skills": [
+      "counseling",
+      "cleanup"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 3,
+    "task_priority_score": 75,
+    "deadline_hours_remaining": 168,
+    "estimated_duration_hours": 1,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [],
+    "ngo_name": "UdayKiran Foundation",
+    "created_time": "2026-04-24T20:19:02.206831"
+  },
+  {
+    "task_id": "T0007",
+    "task_title": "Cleanup Drive Task 7",
+    "task_description": "Volunteer needed for cleanup drive in Kolkata.",
+    "task_category": "cleanup_drive",
+    "location_city": "Kolkata",
+    "area": "Malad",
+    "latitude": 22.62793,
+    "longitude": 88.39405,
+    "disaster_type": "none",
+    "required_skills": [
+      "cleanup",
+      "logistics"
+    ],
+    "required_volunteers_count": 2,
+    "currently_assigned_count": 0,
+    "task_priority_score": 32,
+    "deadline_hours_remaining": 24,
+    "estimated_duration_hours": 6,
+    "physical_effort_level": "low",
+    "requires_vehicle": "none",
+    "preferred_languages": [],
+    "ngo_name": "HelpIndia Foundation",
+    "created_time": "2026-04-24T18:19:02.206933"
+  },
+  {
+    "task_id": "T0008",
+    "task_title": "Food Distribution Task 8",
+    "task_description": "Volunteer needed for food distribution in Mumbai.",
+    "task_category": "food_distribution",
+    "location_city": "Mumbai",
+    "area": "Connaught Place",
+    "latitude": 19.14891,
+    "longitude": 72.93549,
+    "disaster_type": "none",
+    "required_skills": [
+      "food_distribution",
+      "logistics"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 4,
+    "task_priority_score": 37,
+    "deadline_hours_remaining": 12,
+    "estimated_duration_hours": 4,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Kannada"
+    ],
+    "ngo_name": "RapidRelief NGO",
+    "created_time": "2026-04-24T02:19:02.207029"
+  },
+  {
+    "task_id": "T0009",
+    "task_title": "Disaster Rescue Task 9",
+    "task_description": "Volunteer needed for disaster rescue in Lucknow.",
+    "task_category": "disaster_rescue",
+    "location_city": "Lucknow",
+    "area": "Kurla",
+    "latitude": 26.85497,
+    "longitude": 80.91405,
+    "disaster_type": "landslide",
+    "required_skills": [
+      "driving",
+      "rescue"
+    ],
+    "required_volunteers_count": 8,
+    "currently_assigned_count": 2,
+    "task_priority_score": 52,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 3,
+    "physical_effort_level": "high",
+    "requires_vehicle": "bike",
+    "preferred_languages": [
+      "Hindi",
+      "Marathi"
+    ],
+    "ngo_name": "CareBridge Trust",
+    "created_time": "2026-04-24T23:19:02.207152"
+  },
+  {
+    "task_id": "T0010",
+    "task_title": "Food Distribution Task 10",
+    "task_description": "Volunteer needed for food distribution in Ahmedabad.",
+    "task_category": "food_distribution",
+    "location_city": "Ahmedabad",
+    "area": "Borivali",
+    "latitude": 22.94695,
+    "longitude": 72.48261,
+    "disaster_type": "none",
+    "required_skills": [
+      "logistics",
+      "packaging"
+    ],
+    "required_volunteers_count": 8,
+    "currently_assigned_count": 2,
+    "task_priority_score": 87,
+    "deadline_hours_remaining": 12,
+    "estimated_duration_hours": 3,
+    "physical_effort_level": "high",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Bengali"
+    ],
+    "ngo_name": "HelpIndia Foundation",
+    "created_time": "2026-04-24T04:19:02.207253"
+  },
+  {
+    "task_id": "T0011",
+    "task_title": "Food Distribution Task 11",
+    "task_description": "Volunteer needed for food distribution in Bangalore.",
+    "task_category": "food_distribution",
+    "location_city": "Bangalore",
+    "area": "Thane",
+    "latitude": 13.01073,
+    "longitude": 77.61479,
+    "disaster_type": "none",
+    "required_skills": [
+      "packaging",
+      "logistics"
+    ],
+    "required_volunteers_count": 3,
+    "currently_assigned_count": 2,
+    "task_priority_score": 69,
+    "deadline_hours_remaining": 168,
+    "estimated_duration_hours": 3,
+    "physical_effort_level": "high",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Gujarati"
+    ],
+    "ngo_name": "SevaSetu Initiative",
+    "created_time": "2026-04-24T22:19:02.207359"
+  },
+  {
+    "task_id": "T0012",
+    "task_title": "Cleanup Drive Task 12",
+    "task_description": "Volunteer needed for cleanup drive in Kolkata.",
+    "task_category": "cleanup_drive",
+    "location_city": "Kolkata",
+    "area": "Bandra",
+    "latitude": 22.50281,
+    "longitude": 88.3007,
+    "disaster_type": "none",
+    "required_skills": [
+      "cleanup",
+      "logistics",
+      "packaging"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 2,
+    "task_priority_score": 50,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 6,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [],
+    "ngo_name": "CareBridge Trust",
+    "created_time": "2026-04-24T18:19:02.207470"
+  },
+  {
+    "task_id": "T0013",
+    "task_title": "Disaster Rescue Task 13",
+    "task_description": "Volunteer needed for disaster rescue in Mumbai.",
+    "task_category": "disaster_rescue",
+    "location_city": "Mumbai",
+    "area": "Dadar",
+    "latitude": 19.07331,
+    "longitude": 72.80852,
+    "disaster_type": "none",
+    "required_skills": [
+      "driving",
+      "medical"
+    ],
+    "required_volunteers_count": 3,
+    "currently_assigned_count": 0,
+    "task_priority_score": 100,
+    "deadline_hours_remaining": 24,
+    "estimated_duration_hours": 1,
+    "physical_effort_level": "high",
+    "requires_vehicle": "car",
+    "preferred_languages": [
+      "Kannada",
+      "Bengali"
+    ],
+    "ngo_name": "NayaSaathi Org",
+    "created_time": "2026-04-24T22:19:02.207534"
+  },
+  {
+    "task_id": "T0014",
+    "task_title": "Cleanup Drive Task 14",
+    "task_description": "Volunteer needed for cleanup drive in Pune.",
+    "task_category": "cleanup_drive",
+    "location_city": "Pune",
+    "area": "Malad",
+    "latitude": 18.45643,
+    "longitude": 73.9338,
+    "disaster_type": "none",
+    "required_skills": [
+      "logistics",
+      "rescue"
+    ],
+    "required_volunteers_count": 20,
+    "currently_assigned_count": 6,
+    "task_priority_score": 74,
+    "deadline_hours_remaining": 24,
+    "estimated_duration_hours": 1,
+    "physical_effort_level": "high",
+    "requires_vehicle": "none",
+    "preferred_languages": [],
+    "ngo_name": "RapidRelief NGO",
+    "created_time": "2026-04-24T09:19:02.207577"
+  },
+  {
+    "task_id": "T0015",
+    "task_title": "Disaster Rescue Task 15",
+    "task_description": "Volunteer needed for disaster rescue in Ahmedabad.",
+    "task_category": "disaster_rescue",
+    "location_city": "Ahmedabad",
+    "area": "Dwarka",
+    "latitude": 23.00777,
+    "longitude": 72.61831,
+    "disaster_type": "drought",
+    "required_skills": [
+      "driving",
+      "rescue",
+      "medical"
+    ],
+    "required_volunteers_count": 2,
+    "currently_assigned_count": 1,
+    "task_priority_score": 86,
+    "deadline_hours_remaining": 72,
+    "estimated_duration_hours": 2,
+    "physical_effort_level": "high",
+    "requires_vehicle": "car",
+    "preferred_languages": [],
+    "ngo_name": "HopeFirst Society",
+    "created_time": "2026-04-24T13:19:02.207625"
+  },
+  {
+    "task_id": "T0016",
+    "task_title": "Awareness Campaign Task 16",
+    "task_description": "Volunteer needed for awareness campaign in Pune.",
+    "task_category": "awareness_campaign",
+    "location_city": "Pune",
+    "area": "Indiranagar",
+    "latitude": 18.53472,
+    "longitude": 73.9273,
+    "disaster_type": "none",
+    "required_skills": [
+      "data_entry",
+      "teaching",
+      "counseling"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 4,
+    "task_priority_score": 32,
+    "deadline_hours_remaining": 6,
+    "estimated_duration_hours": 3,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "English",
+      "Gujarati"
+    ],
+    "ngo_name": "HopeFirst Society",
+    "created_time": "2026-04-24T21:19:02.207666"
+  },
+  {
+    "task_id": "T0017",
+    "task_title": "Counseling Support Task 17",
+    "task_description": "Volunteer needed for counseling support in Jaipur.",
+    "task_category": "counseling_support",
+    "location_city": "Jaipur",
+    "area": "Koramangala",
+    "latitude": 26.958,
+    "longitude": 75.8221,
+    "disaster_type": "none",
+    "required_skills": [
+      "counseling",
+      "teaching"
+    ],
+    "required_volunteers_count": 2,
+    "currently_assigned_count": 1,
+    "task_priority_score": 75,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 2,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Odia",
+      "Hindi"
+    ],
+    "ngo_name": "NayaSaathi Org",
+    "created_time": "2026-04-23T23:19:02.207721"
+  },
+  {
+    "task_id": "T0018",
+    "task_title": "Logistics Transport Task 18",
+    "task_description": "Volunteer needed for logistics transport in Bangalore.",
+    "task_category": "logistics_transport",
+    "location_city": "Bangalore",
+    "area": "Dadar",
+    "latitude": 13.03902,
+    "longitude": 77.57755,
+    "disaster_type": "none",
+    "required_skills": [
+      "driving",
+      "logistics"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 2,
+    "task_priority_score": 79,
+    "deadline_hours_remaining": 24,
+    "estimated_duration_hours": 2,
+    "physical_effort_level": "high",
+    "requires_vehicle": "van",
+    "preferred_languages": [
+      "Bengali"
+    ],
+    "ngo_name": "GreenHands Welfare",
+    "created_time": "2026-04-24T00:19:02.207761"
+  },
+  {
+    "task_id": "T0019",
+    "task_title": "Logistics Transport Task 19",
+    "task_description": "Volunteer needed for logistics transport in Mumbai.",
+    "task_category": "logistics_transport",
+    "location_city": "Mumbai",
+    "area": "Connaught Place",
+    "latitude": 19.07866,
+    "longitude": 72.95157,
+    "disaster_type": "none",
+    "required_skills": [
+      "driving",
+      "logistics"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 1,
+    "task_priority_score": 73,
+    "deadline_hours_remaining": 48,
+    "estimated_duration_hours": 4,
+    "physical_effort_level": "high",
+    "requires_vehicle": "van",
+    "preferred_languages": [
+      "Marathi"
+    ],
+    "ngo_name": "HopeFirst Society",
+    "created_time": "2026-04-24T06:19:02.207801"
+  },
+  {
+    "task_id": "T0020",
+    "task_title": "Awareness Campaign Task 20",
+    "task_description": "Volunteer needed for awareness campaign in Delhi.",
+    "task_category": "awareness_campaign",
+    "location_city": "Delhi",
+    "area": "Whitefield",
+    "latitude": 28.64075,
+    "longitude": 77.25177,
+    "disaster_type": "none",
+    "required_skills": [
+      "data_entry",
+      "teaching",
+      "counseling"
+    ],
+    "required_volunteers_count": 5,
+    "currently_assigned_count": 3,
+    "task_priority_score": 93,
+    "deadline_hours_remaining": 24,
+    "estimated_duration_hours": 1,
+    "physical_effort_level": "medium",
+    "requires_vehicle": "none",
+    "preferred_languages": [
+      "Punjabi"
+    ],
+    "ngo_name": "RapidRelief NGO",
+    "created_time": "2026-04-24T08:19:02.207840"
+  }
+]
