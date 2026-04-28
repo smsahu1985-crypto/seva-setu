@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { api } from "../lib/api";
 
 const CATEGORIES = [
   "Food & Nutrition",
@@ -17,16 +18,56 @@ export default function PublicRequest() {
   const [location, setLocation] = useState(null);
   const [isDetecting, setIsDetecting] = useState(false);
   const [isExtracting, setIsExtracting] = useState(false);
+  const [contact, setContact] = useState("");
+  const [status, setStatus] = useState({ type: "idle", message: "" });
+  const [aiResult, setAiResult] = useState(null);
 
-  // Simulated AI Extraction Logic
-  const handleAutoExtract = () => {
+  const normalizeCategory = (value) => {
+    const normalized = String(value || "").trim().toLowerCase().replace(/[_-]/g, " ");
+    const categoryMap = {
+      "food nutrition": "Food & Nutrition",
+      "food relief": "Food & Nutrition",
+      "medical aid": "Medical Aid",
+      medical: "Medical Aid",
+      education: "Education",
+      shelter: "Shelter",
+      "disaster relief": "Disaster Relief",
+      logistics: "Disaster Relief",
+    };
+    return categoryMap[normalized] || value;
+  };
+
+  const urgencyToScore = (value) => {
+    const normalized = String(value || "").toLowerCase();
+    if (normalized === "critical") return 95;
+    if (normalized === "high") return 80;
+    if (normalized === "medium") return 55;
+    if (normalized === "low") return 25;
+    return urgency;
+  };
+
+  const handleAutoExtract = async () => {
     if (!description) return;
     setIsExtracting(true);
-    
-    setTimeout(() => {
+    setStatus({ type: "idle", message: "" });
+
+    try {
+      const result = await api.autofill(description);
+      setAiResult(result);
+      if (result.category) setCategory(normalizeCategory(result.category));
+      if (result.priority_label || result.urgency_level) {
+        setUrgency(urgencyToScore(result.priority_label || result.urgency_level));
+      }
+      if (result.location_city || result.location_state) {
+        setLocation((current) => ({
+          lat: current?.lat || "",
+          lng: current?.lng || "",
+          address: [result.location_city, result.location_state].filter(Boolean).join(", "),
+        }));
+      }
+      setStatus({ type: "success", message: "AI filled the request details. Please review before publishing." });
+    } catch (error) {
       const text = description.toLowerCase();
-      
-      // Simple Keyword Matching
       if (text.includes("food") || text.includes("hungry") || text.includes("ration")) {
         setCategory("Food & Nutrition");
       } else if (text.includes("medical") || text.includes("doctor") || text.includes("hospital") || text.includes("medicine")) {
@@ -43,9 +84,10 @@ export default function PublicRequest() {
       } else if (text.includes("asap") || text.includes("soon")) {
         setUrgency(75);
       }
-
+      setStatus({ type: "warning", message: `AI autofill unavailable, used local hints instead. ${error.message}` });
+    } finally {
       setIsExtracting(false);
-    }, 1200);
+    }
   };
 
   const detectLocation = () => {
@@ -65,6 +107,33 @@ export default function PublicRequest() {
     const red = Math.min(255, (urgency * 2.55));
     const green = Math.max(0, 255 - (urgency - 50) * 5.1);
     return `rgb(${red}, ${green}, 0)`;
+  };
+
+  const handleSubmit = async () => {
+    if (!description || !category || !location?.address) {
+      setStatus({ type: "error", message: "Please add a description, category, and service location." });
+      return;
+    }
+
+    setStatus({ type: "loading", message: "Publishing request..." });
+
+    try {
+      const result = await api.createRequest({
+        name: aiResult?.request_title || description.slice(0, 80),
+        contact,
+        location: location.address,
+        category,
+        description,
+      });
+
+      setAiResult(result.ai);
+      setStatus({
+        type: "success",
+        message: `Request published with ${result.data?.[0]?.urgency || "medium"} priority.`,
+      });
+    } catch (error) {
+      setStatus({ type: "error", message: error.message });
+    }
   };
 
   return (
@@ -203,12 +272,37 @@ export default function PublicRequest() {
             </div>
           </div>
 
+          <div className="space-y-4 pt-4 border-t border-slate-100">
+            <label className="block text-sm font-bold text-slate-700 uppercase tracking-wider">
+              Contact
+            </label>
+            <input
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+              placeholder="Phone or email for NGO follow-up"
+              className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+            />
+          </div>
+
+          {status.message && (
+            <div className={`rounded-xl border p-4 text-sm font-medium ${
+              status.type === "error"
+                ? "bg-red-50 border-red-100 text-red-700"
+                : status.type === "warning"
+                  ? "bg-amber-50 border-amber-100 text-amber-700"
+                  : "bg-green-50 border-green-100 text-green-700"
+            }`}>
+              {status.message}
+            </div>
+          )}
+
           {/* Submit Button */}
           <button
-            onClick={() => alert("Request Published! Local NGOs have been notified.")}
+            onClick={handleSubmit}
+            disabled={status.type === "loading"}
             className="w-full py-4 bg-blue-600 text-white font-bold text-lg rounded-2xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 mt-4"
           >
-            Publish Request
+            {status.type === "loading" ? "Publishing..." : "Publish Request"}
           </button>
         </div>
       </div>
